@@ -225,6 +225,11 @@ export class Play3 extends Phaser.Scene {
         child.enableBody(true, child.x, child.y + 10, true, true);
       });
 
+      this.scene.start(
+        "victory",
+      { score: score } // se pasa el puntaje como dato a la escena Play2
+      );
+      
       var x =
         player.x < 400
           ? Phaser.Math.Between(400, 800)
@@ -249,6 +254,11 @@ export class Play3 extends Phaser.Scene {
       points.children.iterate(function (child) {
         child.enableBody(true, child.x, child.y + 10, true, true);
       });
+
+      this.scene.start(
+        "victory",
+      { score: score } // se pasa el puntaje como dato a la escena Play2
+      );
 
       var x =
         player.x < 400

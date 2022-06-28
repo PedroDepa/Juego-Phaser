@@ -13,6 +13,8 @@ export class Preloads extends Phaser.Scene {
       "mainmenu_bg",
       "public/assets/imagines/main_menu_background.png" 
     );
+    this.load.image("victory", "public/assets/imagines/victory.png");
+    this.load.image("fondovictoria", "public/assets/imagines/fondovictoria.png");
     this.load.image("star", "public/assets/imagines/star.png");
     this.load.image("point", "public/assets/imagines/point.png");
     this.load.image("bomb", "public/assets/imagines/bomb.png");
