@@ -30,10 +30,8 @@ var config = {
       debug: false,
     },
   },
-  scene: [Preloads, MainMenu, Play, Play2, Play3, Retry, victory], // Listado de todas las escenas del juego, en orden
+  scene: [Preloads, MainMenu, Play, Retry, Play2, Play3, victory], // Listado de todas las escenas del juego, en orden
   // La primera escena es con la cual empieza el juego
 };
-
-
 
 var game = new Phaser.Game(config);
