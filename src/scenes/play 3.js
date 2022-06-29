@@ -161,10 +161,10 @@ export class Play3 extends Phaser.Scene {
     //  The score
     scoreText = this.add.text(30, 6, "Score: " + score, {
       fontSize: "32px",
-      fill: "white",
+      fill: "#FFFFFF",
     });
 
-    scoreTimeText = this.add.text(650, 6, "Time: " + scoreTime,{
+    scoreTimeText = this.add.text(630, 6, "Time: " + scoreTime,{
       fontSize: "32px",
       fill: "#FFFFFF",
     });
@@ -229,7 +229,7 @@ export class Play3 extends Phaser.Scene {
         "victory",
       { score: score } // se pasa el puntaje como dato a la escena Play2
       );
-      
+
       var x =
         player.x < 400
           ? Phaser.Math.Between(400, 800)
